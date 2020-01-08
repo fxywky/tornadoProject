@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="{{static_url('css/home.css')}}">
+</head>
+<body>
+    <h1>num: {{num}}</h1>
+    <h1>{{dic['age']}}</h1>
+
+
+    {% if flag == 1 %}
+        <h1> fanxiaoye </h1>
+    {% end %}
+
+    {% for i in list1%}
+        {{i}}
+    {% end %}
+
+
+</body>
+</html>
