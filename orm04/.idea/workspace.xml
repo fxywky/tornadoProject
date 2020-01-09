@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdf4c87a-35dc-473c-ba65-f4695411f114" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1W7AVHfFlQ191zTPmNBOPIMEuy9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ORM" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="orm04" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdf4c87a-35dc-473c-ba65-f4695411f114" name="Default Changelist" comment="" />
+      <created>1578490281965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578490281965</updated>
+      <workItem from="1578490284316" duration="2850000" />
+      <workItem from="1578537580889" duration="11000" />
+      <workItem from="1578537747872" duration="12000" />
+      <workItem from="1578538052813" duration="9000" />
+      <workItem from="1578538138069" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="288" y="177" width="426" height="486" key="FileChooserDialogImpl" timestamp="1578540481605">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state x="288" y="177" width="426" height="486" key="FileChooserDialogImpl/0.0.1028.833@0.0.1028.833" timestamp="1578540481605" />
+    <state width="1005" height="256" key="GridCell.Tab.0.bottom" timestamp="1578543603382">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.0.bottom/0.0.1028.833@0.0.1028.833" timestamp="1578543603382" />
+    <state width="1005" height="256" key="GridCell.Tab.0.center" timestamp="1578543603380">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.0.center/0.0.1028.833@0.0.1028.833" timestamp="1578543603380" />
+    <state width="1005" height="256" key="GridCell.Tab.0.left" timestamp="1578543603380">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.0.left/0.0.1028.833@0.0.1028.833" timestamp="1578543603380" />
+    <state width="1005" height="256" key="GridCell.Tab.0.right" timestamp="1578543603381">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.0.right/0.0.1028.833@0.0.1028.833" timestamp="1578543603381" />
+    <state width="1005" height="256" key="GridCell.Tab.1.bottom" timestamp="1578543603386">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.1.bottom/0.0.1028.833@0.0.1028.833" timestamp="1578543603386" />
+    <state width="1005" height="256" key="GridCell.Tab.1.center" timestamp="1578543603383">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.1.center/0.0.1028.833@0.0.1028.833" timestamp="1578543603383" />
+    <state width="1005" height="256" key="GridCell.Tab.1.left" timestamp="1578543603382">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.1.left/0.0.1028.833@0.0.1028.833" timestamp="1578543603382" />
+    <state width="1005" height="256" key="GridCell.Tab.1.right" timestamp="1578543603385">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state width="1005" height="256" key="GridCell.Tab.1.right/0.0.1028.833@0.0.1028.833" timestamp="1578543603385" />
+    <state x="18" y="51" width="992" height="732" key="SettingsEditor" timestamp="1578540916969">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state x="18" y="51" width="992" height="732" key="SettingsEditor/0.0.1028.833@0.0.1028.833" timestamp="1578540916969" />
+    <state x="197" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1578539522065">
+      <screen x="0" y="0" width="1028" height="833" />
+    </state>
+    <state x="197" y="244" key="com.intellij.ide.util.TipDialog/0.0.1028.833@0.0.1028.833" timestamp="1578539522065" />
+  </component>
+</project>
