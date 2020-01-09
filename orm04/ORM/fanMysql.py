@@ -75,7 +75,43 @@ class FanMysql():
                 obj[fieldsList[count]] = x
                 count += 1
             resList.append(obj)
+        print(resList)
         return resList
+
+    def getFilter(self, sql, tableName, searchField):
+        resList = []
+        fieldsList = []
+        fieldSql = "select COLUMN_NAME from " \
+                   "information_schema.COLUMNS where table_name" \
+                   " ='%s' and table_schema = '%s'" % \
+                   (tableName, self.dbName)
+        fields = self.getAll(fieldSql)
+        print('fields=', fields)
+
+        if '*' in searchField:
+            for item in fields:
+                fieldsList.append(item[0])
+            print('fieldsList= ', fieldsList)
+        else:
+            for item in searchField:
+                for field in fields:
+                    if item in field:
+                        fieldsList.append(item)
+            print('fieldsList= ', fieldsList)
+
+        # 执行查询数据sql
+        res = self.getAll(sql)
+        print(res)
+        for item in res:
+            obj = {}
+            count = 0
+            for x in item:
+                obj[fieldsList[count]] = x
+                count += 1
+            resList.append(obj)
+        print(resList)
+        return resList
+
 
 
     def insert(self, sql):
@@ -91,6 +127,7 @@ class FanMysql():
         count = 0
         try:
             self.connect()
+            # 删除, 返回的是删除的是个数
             count = self.cursor.execute(sql)
             self.db.commit()
             self.close()
