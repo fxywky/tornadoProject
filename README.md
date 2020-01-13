@@ -48,7 +48,7 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 ```
 
 # xsrf和用户验证【重点是逻辑】 
-## xsrf
+### xsrf
 在首页（静态页面）的Handler里，继承StaticFileHandler，__init__方法中调用父类的初始化方法后，加一句self.xsrf <br>
 
 ```
@@ -57,5 +57,5 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
         self.xsrf_token
 ```
 
-## 用户验证【重点是逻辑】
+### 用户验证【重点是逻辑】
 
