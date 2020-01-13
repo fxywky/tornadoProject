@@ -18,7 +18,7 @@ ORM类中有save()方法，all()类方法，filter()类方法等等
 class ORM():<br>
   def save(self):<br>
         # insert into torStus (name,age) values('asd', 22)<br>
-        # 返回的是继承这个类的类名<br>
+# 返回的是继承这个类的类名<br>
         tableName = self.__class__.__name__<br>
         fieldsStr = valuesStr = '('<br>
         for field in self.__dict__:<br>
