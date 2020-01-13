@@ -3,7 +3,7 @@
 
 访问静态文件，这个路由写在最后面
 ```
-r'/(.*)$', tornado.web.StaticFileHandler, {'path': os.path.join(config.settings['static_path'],'html'),'default_filename':'index.html'})
+(r'/(.*)$', tornado.web.StaticFileHandler, {'path': os.path.join(config.settings['static_path'],'html'),'default_filename':'index.html'})
 ```
 
 # ORM
@@ -48,6 +48,7 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 ```
 
 # xsrf和用户验证【重点是逻辑】 
+## xsrf
 在首页（静态页面）的Handler里，继承StaticFileHandler，__init__方法中调用父类的初始化方法后，加一句self.xsrf <br>
 
 ```
@@ -55,4 +56,6 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
         super(SFHandler, self).__init__(*args, **kwargs)
         self.xsrf_token
 ```
+
+## 用户验证【重点是逻辑】
 
