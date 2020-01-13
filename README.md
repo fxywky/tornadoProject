@@ -2,8 +2,9 @@
 编写顺序是按照后面的数字进行记录的
 
 访问静态文件，这个路由写在最后面
+'''
 r'/(.*)$', tornado.web.StaticFileHandler, {'path': os.path.join(config.settings['static_path'],'html'),'default_filename':'index.html'})
-
+'''
 
 # ORM
 models.py中定义模型类，和Django中的类似。
@@ -46,9 +47,9 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 获取字段名<br>
 
 # xsrf和用户验证【重点是逻辑】 
-在首页（静态页面）的Handler里，继承StaticFileHandler，__init__方法中调用父类的初始化方法后，加一句self.xsrf
+在首页（静态页面）的Handler里，继承StaticFileHandler，__init__方法中调用父类的初始化方法后，加一句self.xsrf <br>
 '''
-    def __init__(self, *args, **kwargs):
+    def _ init_(self, *args, **kwargs):
         super(SFHandler, self).__init__(*args, **kwargs)
         self.xsrf_token
 '''
