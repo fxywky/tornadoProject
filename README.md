@@ -44,3 +44,5 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 
 "select COLUMN_NAME from information_schema.COLUMNS where table_name ='%s' and table_schema = '%s'" % (tableName, self.dbName)
 获取字段名<br>
+
+# xsrf和用户验证【重点是逻辑】 
