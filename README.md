@@ -17,7 +17,7 @@ ORM类中有save()方法，all()类方法，filter()类方法等等
 ①save()方法用于将创建的对象保存到数据库中，self.__class__.__name__返回的是继承ORM类的类名torStus。
 self.__dict__返回时的是继承ORM的类初始化传来的参数，以字典的形式{'name':'fan', 'age':24} <br>
 
-···
+```
 class ORM(): <br>
     def save(self):<br>
         insert into torStus (name,age) values('asd', 22)<br>
