@@ -13,22 +13,22 @@ ORM类最好定义在一个脚本文件中orm.py中
 
 ORM类中有save()方法，all()类方法，filter()类方法等等
 
-①save()方法用于将创建的对象保存到数据库中，[self.__class__.__name__]返回的是继承ORM类的类名torStus。[self.__dict__]返回时的是继承ORM的类初始化传来的参数，以字典的形式{'name':'fan', 'age':24}
-[class ORM():]
+①save()方法用于将创建的对象保存到数据库中，[self.__class__.__name__]返回的是继承ORM类的类名torStus。self.__dict__返回时的是继承ORM的类初始化传来的参数，以字典的形式{'name':'fan', 'age':24}
+class ORM():
     def save(self):
         # insert into torStus (name,age) values('asd', 22)
         # 返回的是继承这个类的类名
         tableName = self.__class__.__name__
         fieldsStr = valuesStr = '('
-        for field in self.__dict__:]
+        for field in self.__dict__:
 
 ②filter()类方法，通过继承类torStus.filter(...)使用，可以这样理解，因为查询无需创建一个具体的对象
-[@classmethod
+@classmethod
     def filter(cls, *args, **kwargs):
         tableName = cls.__name__
         # print(args[0], args[1], len(args))
         # print(kwargs)
-        # id,name,age]
+        # id,name,age
         
 这里的args代表要查询的字段名，kwargs为查询条件
 
