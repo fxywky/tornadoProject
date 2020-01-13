@@ -58,4 +58,14 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 ```
 
 ### 用户验证【重点是逻辑】
+当有的页面需要logined才能查看时，比如个人主页等，需要login验证。不论我们从哪一网址进入login页面，当logined之后，再重定向至该页面。<br><br>
 
+需要验证的页面，可以用get_current_user()方法，若返回None，即验证失败则需要重定向至配置中login_url所制定的路由，若验证通过，则走@tornado.web.authenticated装饰器装饰的方法，即进入个人主页。
+
+#### 验证失败
+重定向至配置中login_url所制定的路由时，url中会多加 ？next=/...，即指明从哪个页面转来的，可以通过：
+```
+next0 = self.get_query_argument('next', '/')   # 获取next的值，即登陆成功后要转向的页面的url
+url = 'login?next=' + next0
+```
+先通过get方法，将url传给前端页面要提交表单的action属性，这样再通过post方式，将表单数据和url传给post方法，这时验证通过与否可以重定向至转来的页面（成功），或是再次登录（失败）
