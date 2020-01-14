@@ -60,7 +60,7 @@ FanMysql是单例类，将从数据库查询的数据重组并返回<br>
 ### 用户验证【重点是逻辑】
 当有的页面需要logined才能查看时，比如个人主页等，需要login验证。不论我们从哪一网址进入login页面，当logined之后，再重定向至该页面。<br><br>
 
-需要验证的页面，可以用get_current_user()方法，若返回None或False，即验证失败则需要重定向至配置中login_url所制定的路由，若验证通过，则走@tornado.web.authenticated装饰器装饰的方法，即进入个人主页。
+需要验证的页面，可以用get_current_user()方法，若返回None、False、0或""，即验证失败则需要重定向至配置中login_url所制定的路由，若验证通过，则走@tornado.web.authenticated装饰器装饰的方法，即进入个人主页。
 ```
     def get_current_user(self):
         # /home
